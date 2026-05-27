@@ -42,9 +42,11 @@ export default function Contact() {
         "service_8ssi2gt",
         "template_wse7dtu",
         {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
           from_name: formData.name,
           from_email: formData.email,
-          message: formData.message,
         },
         "pIrMxxLVdhORiJBtF"
       );
