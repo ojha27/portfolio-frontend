@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Mail, Link, GitBranch, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,26 +38,22 @@ export default function Contact() {
     setStatus("sending");
 
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+      await emailjs.send(
+        "service_8ssi2gt",
+        "template_wse7dtu",
         {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        "pIrMxxLVdhORiJBtF"
       );
 
-      const data = await response.json();
-
-      if (data.success) {
-        setStatus("success");
-        setFormData({ name: "", email: "", message: "" });
-        setTimeout(() => setStatus(""), 3000);
-
-      } else {
-        setStatus("error");
-      }
+      setStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+      setTimeout(() => setStatus(""), 3000);
     } catch (error) {
+      console.error("Email error:", error);
       setStatus("error");
     }
   };
