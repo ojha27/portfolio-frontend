@@ -39,7 +39,7 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        "service_8ssi2gt",
+        "service_tx0bhlm",
         "template_wse7dtu",
         {
           name: formData.name,
