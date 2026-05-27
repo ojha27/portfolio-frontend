@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { number: "2+", label: "Years Experience" },
+  { number: "2.5", label: "Years Experience" },
   { number: "20+", label: "APIs Built" },
   { number: "40+", label: "Bugs Resolved" },
 ];
@@ -59,7 +59,7 @@ export default function About() {
           {/* Bio */}
           <p className="text-[#8892b0] text-lg text-center max-w-3xl mx-auto mb-16 leading-relaxed">
             I&apos;m a passionate full-stack developer specializing in MERN
-            stack. With 2+ years of hands-on experience, I&apos;ve worked on
+            stack. With 2.5 years of hands-on experience, I&apos;ve worked on
             enterprise applications and scalable solutions. I love solving
             complex problems, writing clean code, and building user-centric
             applications that make a difference.
