@@ -17,7 +17,8 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-4 md:px-8">
+    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-4 md:px-8 pt-20 md:pt-0">
+      {" "}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#64ffda] opacity-10 rounded-full blur-3xl animate-pulse"></div>
         <div
@@ -25,7 +26,6 @@ export default function HeroSection() {
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
-
       <div
         className={`text-center transition-all duration-1000 transform
         ${
@@ -38,7 +38,8 @@ export default function HeroSection() {
               src="/images/pic2.jpeg"
               alt="Amrita Ojha"
               fill
-              className="rounded-full object-cover object-[center_15%] border-4 border-[#64ffda] shadow-lg shadow-[#64ffda]/25"            />
+              className="rounded-full object-cover object-[center_15%] border-4 border-[#64ffda] shadow-lg shadow-[#64ffda]/25"
+            />
           </div>
         </div>
 
