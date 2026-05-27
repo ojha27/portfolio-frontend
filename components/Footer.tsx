@@ -61,7 +61,7 @@ export default function Footer() {
                 <Link size={18} />
               </a>
               <a
-                href="mailto:amritaojha914@gmail.com"
+                href="mailto:amritaojha641@gmail.com"
                 className="p-3 bg-[#112240] border border-[#64ffda]/20 rounded-lg text-[#64ffda] hover:bg-[#64ffda]/10 transition-all duration-300"
               >
                 <Mail size={18} />

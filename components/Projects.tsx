@@ -9,7 +9,7 @@ const personalProjects = [
     description:
       "AI-powered SEO content generation platform using Next.js and OpenAI API. Keyword-based workflows with optimized frontend performance.",
     tech: ["Next.js", "React", "OpenAI API", "Node.js", "Tailwind CSS"],
-    liveLink: "https://your-actual-link.vercel.app",
+    liveLink: "https://seo-generator-frontend.vercel.app/login",
     githubLink: "https://github.com/ojha27/seo-generator",
     hasCode: true,
   },
@@ -22,7 +22,7 @@ const professionalProjects = [
       "Enterprise product lifecycle management system with RBAC authentication, supplier workflows, and document management. Built at Tops Infosolutions.",
     tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "RBAC"],
     liveLink: "#",
-    hasCode: false, 
+    hasCode: false,
   },
   {
     title: "Fix It Today",
@@ -60,7 +60,6 @@ export default function Projects() {
   return (
     <section id="projects" ref={sectionRef} className="py-24 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
-        {/* Heading */}
         <div
           className={`text-center mb-16 transition-all duration-700
           ${
@@ -72,15 +71,12 @@ export default function Projects() {
           </h2>
           <div className="w-16 h-1 bg-[#64ffda] mx-auto mt-4 rounded-full"></div>
         </div>
-
-        {/* Personal Projects */}
         <div
           className={`mb-16 transition-all duration-700
           ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          {/* Section Label */}
           <div className="flex items-center gap-3 mb-6">
             <Code2 className="text-[#64ffda]" size={20} />
             <h3 className="text-[#e2e8f0] text-xl font-semibold">
@@ -139,14 +135,12 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* Professional Projects */}
         <div
           className={`transition-all duration-700 delay-200
           ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          {/* Section Label */}
           <div className="flex items-center gap-3 mb-6">
             <Briefcase className="text-[#64ffda]" size={20} />
             <h3 className="text-[#e2e8f0] text-xl font-semibold">
@@ -155,7 +149,6 @@ export default function Projects() {
             <div className="flex-1 h-px bg-[#64ffda]/20"></div>
           </div>
 
-          {/* Badge explanation */}
           <p className="text-[#8892b0] text-sm mb-6 flex items-center gap-2">
             <span className="px-2 py-1 bg-[#64ffda]/10 border border-[#64ffda]/30 rounded text-[#64ffda] text-xs">
               Confidential
@@ -172,7 +165,6 @@ export default function Projects() {
                   hover:border-[#64ffda]/60 transition-all duration-300 flex flex-col"
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
-                {/* Confidential Badge */}
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="text-[#e2e8f0] text-lg font-bold">
                     {project.title}
